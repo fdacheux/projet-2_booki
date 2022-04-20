@@ -14,17 +14,17 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 21px; /*Medium website text size*/
 }
 
-header, main{
-    margin: auto;
-    max-width: 1400px;
-}
+/* main{ 
+    margin: auto; 
+}*/
 
 /***** Headers *****/
 
 h1 {
-    font-size: 1.7em;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -40,6 +40,7 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -56,32 +57,40 @@ li {
 header {
     width: 93%;
     margin: auto;
+    /* border: 2px solid green; */
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
+    justify-content: space-between;
+    align-items: stretch;
+    /* border: 2px solid red; */
 }
 
 .navbar__logo {
-    width: 70%;
-    padding-top: 32px;
+    padding: 56px 0;
+    /* border: 2px solid orange; */
+}
+
+nav img{
+    height: 56px;
+    /* border: 2px solid yellow; */
 }
 
 .navbar__button-group {
     display: flex;
-    width: 40%;
     flex-direction: row;
-    font-size: 1.3em;
+    min-width: 30%;
+    /* font-size: 20px; */
+    /* border: 2px solid brown; */
 }
 
 .navbar__button {
-    display: flex;
-    width: 500px;
-    justify-content: center;
-    padding: 32px 24px 0 24px;
+    padding: 72px 24px 0 24px;
+    width: 220px;
+    text-align: center;
+    /* border: 2px solid blue; */
 }
 
 .navbar__button:hover {
@@ -89,6 +98,11 @@ header {
     border-top: solid 3px #0065FC;
 }
 
+
+
+
+
+/* Media queries*/
 
 @media (max-width:767px) {
     header{
@@ -108,15 +122,31 @@ header {
     }
 
     .navbar__button-group {
-        width: 100%;
+        width: 100%; 
     }
 
     .navbar__button{
-        border-top: 3px solid #F2F2F2;
+        width: 100%;
+        font-weight: 500;
+        border-bottom: 4px solid #F2F2F2; 
+        padding: 32px 0 16px 0;
     }
+
+    .navbar__button:hover {
+        border-bottom: solid 4px #0065FC;
+        border-top: none;
+        
+    }    
 
     .promise-block{
         display:block;
         margin: 40px;
     }
 }
+
+@media (max-width:991px){
+    .navbar__button-group{
+        min-width: 55%;
+    }
+}
+
