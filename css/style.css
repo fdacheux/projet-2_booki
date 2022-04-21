@@ -30,10 +30,11 @@ h1 {
 
 /***** Links *****/
 
-a {
+a, a:active, a:hover, a:visited{
     text-decoration: none;
     color: inherit;
 }
+
 
 /***** Lists *****/
 
@@ -86,14 +87,16 @@ nav img{
     /* border: 2px solid brown; */
 }
 
-.navbar__button {
-    padding: 72px 24px 0 24px;
+
+.navbar__button a{
+    display: block;
     width: 220px;
     text-align: center;
-    /* border: 2px solid blue; */
+    height: 100%;
+    padding: 72px 24px 0 24px;
 }
 
-.navbar__button:hover {
+.navbar__button a:hover{
     color: #0065FC;
     border-top: solid 3px #0065FC;
 }
@@ -124,15 +127,19 @@ nav img{
     .navbar__button-group {
         width: 100%; 
     }
-
+    
     .navbar__button{
+        width: 100%;
+    } 
+
+    .navbar__button a{
         width: 100%;
         font-weight: 500;
         border-bottom: 4px solid #F2F2F2; 
-        padding: 32px 0 16px 0;
+        padding: 32px 0 24px 0;
     }
 
-    .navbar__button:hover {
+    .navbar__button a:hover {
         border-bottom: solid 4px #0065FC;
         border-top: none;
         
