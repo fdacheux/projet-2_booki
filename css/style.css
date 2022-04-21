@@ -176,7 +176,36 @@ button {
 .filters-block {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 24px;
 }
+
+.filters-block__label{
+    display: inline-block;
+    border-width: 3px 3px 3px 0;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 50px;
+    padding-right: 10px;
+}
+
+.filters-block__label i{
+    margin: -3px;
+    background-color: #DEEBFF;
+    padding: 16px 15px;
+    border-radius: 50px;
+}
+
+.filters-block span{
+  padding-left: 10px;  
+} 
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 
 /* Media queries*/
 
