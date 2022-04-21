@@ -17,9 +17,9 @@ body {
     font-size: 18px; /*Medium website text size*/
 }
 
-/* main{ 
-    margin: auto; 
-}*/
+/* section{
+    margin: 24px 0 32px 0;
+} */
 
 /***** Headers *****/
 
@@ -51,19 +51,21 @@ li {
 }
 
 /***** Paragraphs *****/
+
 p{
     margin: 0;
 }
+
 /*__________________________________*/
 /*------------> HEADER <------------*/
 /*__________________________________*/
 
 
-header {
+/* header {
     width: 93%;
     margin: auto;
-    /* border: 2px solid green; */
-}
+    /* border: 2px solid green; 
+} */
 
 .navbar {
     display: flex;
@@ -91,7 +93,6 @@ nav img{
     /* border: 2px solid brown; */
 }
 
-
 .navbar__button a{
     display: block;
     width: 220px;
@@ -105,8 +106,59 @@ nav img{
     border-top: solid 3px #0065FC;
 }
 
+/*________________________________*/
+/*------------> MAIN <------------*/
+/*________________________________*/
 
 
+/*Search section*/
+
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0;
+}
+
+.search-bar input,
+button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 16px;
+}
+
+.search-bar__input {
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: #f2f2f2;
+}
+
+.search-bar__location-logo {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+    padding: 0 16px;
+}
+
+.search-bar__buttons {
+    display: flex;
+}
+
+.search-bar__button {
+    color: #f2f2f2;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border: 0;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.search-bar__button:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
 
 
 /* Media queries*/
@@ -114,7 +166,6 @@ nav img{
 @media (max-width:767px) {
     header{
         width:100%;
-        margin: none;
     }
 
     .navbar {
@@ -149,9 +200,27 @@ nav img{
         
     }    
 
-    .promise-block{
-        display:block;
+    .search-container{
         margin: 40px;
+    }
+
+    .search-bar__button--widescreen-version {
+        display: none;
+    }
+
+    .search-bar__button--mobile-version {
+        position: relative;
+        left: -10px;
+        border-radius: 15px 15px 15px 15px;
+    }
+}
+
+@media (min-width:768px) {
+    header, main{
+        margin: 0px 72px;
+    }
+    .search-bar__button--mobile-version {
+        display: none;
     }
 }
 

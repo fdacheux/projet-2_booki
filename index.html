@@ -35,11 +35,35 @@
                 </li>
             </ul>
         </nav>
-        <div class="promise-block">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-        </div>
     </header>   
     
+<!--MAIN-->
+    <main>
+
+        <!--Search section-->
+        <section class="search-container">
+
+            <!--Promise- block-->
+
+            <div class="promise-block">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+
+            <!--Search bar-->
+
+            <form method="post" action="traitement.php" class="search-bar">
+                <div class=" search-bar__location-logo"><i class="fa-solid fa-location-dot"></i></div>
+                <input type="search" name="search" placeholder="Marseille, France" class="search-bar__input" required />
+                <input type="submit" value="Rechercher" class="search-bar__button search-bar__button--widescreen-version" disabled>
+                <button type="submit" class="search-bar__button search-bar__button--mobile-version" disabled>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+           
+
+        </section>
+
+    </main>
 </body>
 </html>
