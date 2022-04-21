@@ -1,7 +1,7 @@
-*,
-*::before,
-*::after {
+*, ::before, ::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -133,6 +133,17 @@ button {
     border-color: #f2f2f2;
 }
 
+.search-bar__input:focus {
+    outline: solid 2px #DEEBFF;
+    background-color: none;
+} 
+
+.search-bar__input:invalid {
+    outline: solid 2px #fca400;
+    background-color: none;
+}
+
+
 .search-bar__location-logo {
     display: flex;
     align-items: center;
@@ -160,6 +171,12 @@ button {
     background-color: #DEEBFF;
 }
 
+/* ----- Filters section -----*/
+
+.filters-block {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Media queries*/
 

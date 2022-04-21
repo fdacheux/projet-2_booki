@@ -52,16 +52,65 @@
 
             <!--Search bar-->
 
-            <form method="post" action="traitement.php" class="search-bar">
+            <form class="search-bar">
                 <div class=" search-bar__location-logo"><i class="fa-solid fa-location-dot"></i></div>
-                <input type="search" name="search" placeholder="Marseille, France" class="search-bar__input" required />
-                <input type="submit" value="Rechercher" class="search-bar__button search-bar__button--widescreen-version" disabled>
-                <button type="submit" class="search-bar__button search-bar__button--mobile-version" disabled>
+                <input type="search" name="search" placeholder="Marseille, France" class="search-bar__input" required/>
+                <input type="submit" value="Rechercher" class="search-bar__button search-bar__button--widescreen-version">
+                <button type="submit" class="search-bar__button search-bar__button--mobile-version">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
            
+            <!--filtres-->
+            <div class="filters-block">
+                <h4>Filtres</h4>
 
+                <div class="filters-block__checkbox-block">
+                    <input type="checkbox" id="economy" name="economy">
+                    <div class="filters-block__label">
+                        <label for="economy">
+                            <i class="fas fa-money-bill-wave label__icon--hover"></i>
+                            <span>Économique</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters-block__checkbox-block">
+                    <input type="checkbox" id="family" name="family">
+                    <div class="filters-block__label">
+                        <label for="family">
+                            <i class="fa-solid fa-child-reaching child-icon"></i>
+                            <span>Familial</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters-block__checkbox-block">
+                    <input type="checkbox" id="romantic" name="romantic">
+                    <div class="filters-block__label">
+                        <label for="romantic">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique </span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters-block__checkbox-block">
+                    <input type="checkbox" id="animals" name="animals">
+                    <div class="filters-block__label">
+                        <label for="animals">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-block">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
 
     </main>
