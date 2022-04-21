@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 21px; /*Medium website text size*/
+    font-size: 18px; /*Medium website text size*/
 }
 
 /* main{ 
@@ -24,15 +24,16 @@ body {
 /***** Headers *****/
 
 h1 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 /***** Links *****/
 
-a, a:active, a:hover, a:visited{
+a { 
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 
@@ -49,7 +50,10 @@ li {
     list-style-type: none;
 }
 
-
+/***** Paragraphs *****/
+p{
+    margin: 0;
+}
 /*__________________________________*/
 /*------------> HEADER <------------*/
 /*__________________________________*/
@@ -70,7 +74,7 @@ header {
 }
 
 .navbar__logo {
-    padding: 56px 0;
+    padding: 32px 0;
     /* border: 2px solid orange; */
 }
 
@@ -93,7 +97,7 @@ nav img{
     width: 220px;
     text-align: center;
     height: 100%;
-    padding: 72px 24px 0 24px;
+    padding: 56px 24px 0 24px;
 }
 
 .navbar__button a:hover{
