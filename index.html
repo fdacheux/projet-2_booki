@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Booking : Trouvez un hébergement pour vos vacances et les activités 
@@ -56,7 +54,7 @@
                 <div class=" search-bar__location-logo"><i class="fa-solid fa-location-dot"></i></div>
                 <input type="search" name="search" placeholder="Marseille, France" class="search-bar__input" required/>
                 <input type="submit" value="Rechercher" class="search-bar__button search-bar__button--widescreen-version">
-                <button type="submit" class="search-bar__button search-bar__button--mobile-version">
+                <button type="submit" class="search-bar__button search-bar__button--mobile-version" aria-label="Rechercher">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
@@ -67,7 +65,7 @@
 
                 <label for="economy">
                     <div class="filters-block__checkbox-block">
-                        <input type="checkbox" id="economy" name="economy">
+                        <input type="checkbox" id="economy" name="economy" aria-checked="false">
                         <div class="filters-block__label">
                             <i class="fas fa-money-bill-wave label__icon--hover"></i>
                             <span>Économique</span>
