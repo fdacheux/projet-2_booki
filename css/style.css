@@ -134,7 +134,6 @@ button {
 }
 
 .search-bar__input:focus {
-    outline: solid 2px #DEEBFF;
     background-color: none;
 } 
 
@@ -144,7 +143,6 @@ button {
 
 .search-bar__input:focus:invalid {
     outline: solid 2px #fca400;
-    background-color: none;
 }
 
 
@@ -167,7 +165,7 @@ button {
     border-radius: 0 15px 15px 0;
     border: 0;
     cursor: pointer;
-    transition: all 400ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .search-bar__button:hover {
@@ -184,6 +182,15 @@ button {
     align-items: center;
     gap: 24px;
 }
+
+label{
+    transition: transform 200ms ease-in;
+}
+
+.filters-block__checkbox-block{
+    cursor: pointer;
+}
+
 
 .filters-block__label{
     display: inline-block;
@@ -218,6 +225,34 @@ input[type="checkbox"] {
   height: 0;
 }
 
+/* Animations */
+
+label:hover:not(checked){
+    transform: scale(1.1);
+}
+
+label:hover:not(checked) .filters-block__label{
+    /* background-color: #ffebde; */
+    color:#fc6500; 
+}
+
+label:hover:not(checked) i{
+    background-color: #ffebde;
+    color:#fc6500;
+    
+}
+
+
+input:checked+div{
+    border-color: hsla(24, 100%, 80%, 0.178);
+    background-color: #ffebde;
+    color: #fc6500;
+}
+
+input:checked+div i{
+    background-color: #fc6500;
+    color: #f2f2f2;
+}
 
 /* Media queries*/
 
@@ -275,7 +310,7 @@ input[type="checkbox"] {
     .filters-block{
         gap: 12px;
     }
-    
+
     h4{
         width: 100%;
     }
