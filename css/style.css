@@ -138,7 +138,11 @@ button {
     background-color: none;
 } 
 
-.search-bar__input:invalid {
+.search-bar__input:focus:valid{
+    outline: solid 2px rgba(35, 187, 21, 0.733);
+}
+
+.search-bar__input:focus:invalid {
     outline: solid 2px #fca400;
     background-color: none;
 }
@@ -175,6 +179,7 @@ button {
 
 .filters-block {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     gap: 24px;
@@ -190,14 +195,21 @@ button {
 }
 
 .filters-block__label i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin: -3px;
     background-color: #DEEBFF;
-    padding: 16px 15px;
+    height: 48px;
+    width: 48px;
     border-radius: 50px;
+    color: #0065FC;
 }
 
+
 .filters-block span{
-  padding-left: 10px;  
+  padding: 0 10px; 
+  font-weight: 700;
 } 
 
 input[type="checkbox"] {
@@ -258,6 +270,14 @@ input[type="checkbox"] {
         position: relative;
         left: -10px;
         border-radius: 15px 15px 15px 15px;
+    }
+
+    .filters-block{
+        gap: 12px;
+    }
+    
+    h4{
+        width: 100%;
     }
 }
 
