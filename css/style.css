@@ -289,6 +289,58 @@ input[type="checkbox"]:focus + div{
     font-size: 18px;
 }
 
+/***** Accomodations cards *****/
+
+/* Acommodations */
+
+.accomodations-block{
+    background-color: #f2f2f2;
+    height: 550px;
+    padding: 25px;
+}
+
+.accomodations-card{
+    max-width: 240px;
+    background-color: white;  
+    border-radius: 20px;
+    border: 5px solid white
+  }
+
+.accomodations-card__photo{
+    height: 115px;
+    max-width: 240px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.accomodations-card__photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.accomodations-card__body{
+    padding: 14px 0 5px 10px;
+    font-size: 14px;
+}
+
+.accomodations-card__body h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.accomodations-card__ratings{
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.card__blue-star{
+    color:#0065FC;
+}
+
+.card__gray-star{
+    color:#F2F2F2;
+}
 /* Media queries*/
 
 @media screen and (max-width:767px) {
