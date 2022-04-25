@@ -289,48 +289,59 @@ input[type="checkbox"]:focus + div{
     font-size: 18px;
 }
 
-/***** Accomodations cards *****/
+/***** Accomodations section  *****/
 
-/* Acommodations */
+/*-> Whole accomodations section <-*/
+
+.accomodations-section{
+    display: flex;
+    gap: 25px; 
+}
+
+.accomodations-section>*{
+    background-color: #f2f2f2;
+    padding: 42px;
+    border-radius: 25px;
+}
 
 .accomodations-block{
-    background-color: #f2f2f2;
-    height: 550px;
-    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    width: 70%;  
+}
+
+
+/*All accomodations card*/
+article{
+    flex: 1 0 30%;
 }
 
 .accomodations-card{
-    max-width: 240px;
     background-color: white;  
     border-radius: 20px;
-    border: 5px solid white
+    border: 5px solid white;
   }
 
-.accomodations-card__photo{
-    height: 115px;
-    max-width: 240px;
-    border-radius: 15px 15px 0 0;
+.accomodations-card__photo {
     overflow: hidden;
 }
 
 .accomodations-card__photo img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 130px;
 }
 
 .accomodations-card__body{
-    padding: 14px 0 5px 10px;
     font-size: 14px;
 }
 
 .accomodations-card__body h4{
     font-size: 16px;
-    margin-bottom: 5px;
 }
 
 .accomodations-card__ratings{
-    margin-top: 6px;
     font-size: 12px;
 }
 
@@ -341,6 +352,65 @@ input[type="checkbox"]:focus + div{
 .card__gray-star{
     color:#F2F2F2;
 }
+
+/*-> Accomodations block <-*/
+
+
+/* Accomodations cards : vertical cards */
+
+.accomodations-card.card--vertical{
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+}
+
+.accomodations-card__photo.card--vertical {
+    border-radius: 15px 15px 0 0;
+    height: 140px;
+    width: 100%;
+}
+
+.accomodations-card__body.card--vertical{
+    padding: 0px 0 5px 10px;
+}
+
+.accomodations-card__body.card--vertical h4{
+    margin-bottom: 5px;
+}
+
+.accomodations-card__ratings.card--vertical{
+    margin-top: 6px;
+}
+
+/*-> Popular block <-*/
+.popular-block{
+    width: 30%;
+}
+/* Popular cards : horizontal cards */
+
+.accomodations-card.card--horizontal{
+    display: flex;
+    max-width: 350px;
+}
+
+.accomodations-card__photo.card--horizontal {
+    border-radius: 15px 0 0 15px;
+    height: 135px;
+    max-width: 38%;
+}
+
+.accomodations-card__body.card--horizontal{
+    padding: 8px 0 0px 24px;
+}
+
+.accomodations-card__body.card--horizontal h4{
+    margin: 0;
+}
+
+.accomodations-card__ratings.card--horizontal{
+    margin-top: 30px;
+}
+
 /* Media queries*/
 
 @media screen and (max-width:767px) {
