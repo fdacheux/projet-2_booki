@@ -456,6 +456,81 @@ article{
     bottom: 0;
 }
 
+/***** activities section  *****/
+
+.activities-section{
+    margin-top: 56px;
+    width:100%;
+}
+
+.activities-block{
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 100%; */
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+/*Activities cards*/
+
+.activities-block>*{
+    width: 23%;
+}
+
+.activities-block article{
+    height: 100%;
+}
+
+.activities-block__2lines-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .activities-block>a, .activities-block> a article {
+    height: 500px;
+} */
+
+.activities-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.082); ;
+    border-radius: 25px;
+    height: 100%;
+    overflow: hidden;
+}
+
+ .activities-card img{ 
+    object-fit: cover;
+} 
+
+.activities-card h4{
+    padding: 20px 15px;
+    font-size: 16px;
+} 
+
+
+
+.activities-card.xl-card img{
+    height: 400px;
+}
+
+.activities-card.large-card img{
+    height: 180px;
+}
+
+.activities-card.xs-card img{
+    height: 110px;
+}
+
+.activities-card.small-card img{
+    height: 140px;
+}
+
+.activities-card.medium-card img{
+    height: 150px;
+}
 /* Media queries*/
 
 @media screen and (max-width:767px) {
