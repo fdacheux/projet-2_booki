@@ -415,7 +415,7 @@ article{
 .popular-block__body{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     gap: 32px;
     width: 100%;
     height: 100%;
@@ -462,17 +462,15 @@ article{
     margin-top: 56px;
     width:100%;
 }
+/*-> Activities cards block <-*/
 
 .activities-block{
     display: flex;
     flex-flow: row wrap;
-    /* width: 100%; */
     justify-content: space-between;
     margin-top: 32px;
     margin-bottom: 32px;
 }
-
-/*Activities cards*/
 
 .activities-block>*{
     width: 23%;
@@ -488,9 +486,7 @@ article{
     justify-content: space-between;
 }
 
-/* .activities-block>a, .activities-block> a article {
-    height: 500px;
-} */
+/*-> All cards <-*/
 
 .activities-card{
     display: flex;
@@ -501,7 +497,7 @@ article{
     overflow: hidden;
 }
 
- .activities-card img{ 
+.activities-card img{ 
     object-fit: cover;
 } 
 
@@ -510,34 +506,42 @@ article{
     font-size: 16px;
 } 
 
-
+/*-> Specific card <-*/
 
 .activities-card.xl-card img{
     height: 400px;
 }
 
 .activities-card.large-card img{
-    height: 180px;
+    height: 190px;
 }
 
 .activities-card.xs-card img{
-    height: 110px;
+    height: 130px;
 }
 
 .activities-card.small-card img{
-    height: 140px;
+    height: 150px;
 }
 
 .activities-card.medium-card img{
-    height: 150px;
+    height: 170px;
 }
-/* Media queries*/
+
+
+/***** Media queries *****/
+
+/*-> Mobile <-*/
 
 @media screen and (max-width:767px) {
+
+    /***HEADER***/
 
     header{
         width:100%;
     }
+
+    /* Mobile : Navbar */
 
     .navbar {
         display: flex;
@@ -571,6 +575,10 @@ article{
         
     }    
 
+    /***MAIN***/
+
+    /* Mobile : Search section */
+
     .search-container{
         margin: 40px;
     }
@@ -591,14 +599,53 @@ article{
 
     h4{
         width: 100%;
+    } /*forcing h4 to be above filters */
+
+    /*Mobile: accommodations section*/
+
+    .accommodations-block{
+        padding-bottom: 10px;
     }
 
     .accommodations-block{
+        flex-direction: column;
         background-color: transparent;
+    }
+
+    .accommodations-card.card--vertical{
+        height: 240px;
+    }
+    .accommodations-card.card--vertical img{
+        min-height:90%;
     }
 
     .popular-block{
         border-radius: 0;
+    }
+
+    /*Mobile: Activities section */
+
+    .activities-section{
+        margin-top: 0;
+        padding: 42px;
+    }
+
+    .activities-block{
+        flex-direction: column;
+    }
+
+    .activities-block>*{
+        width: 100%;
+    }
+
+    .activities-card{
+        /* display: flex; */
+        height: 240px;
+        margin-bottom: 32px;
+    }
+
+    .activities-card img{
+        min-height: 75%;
     }
 }
 
@@ -657,4 +704,8 @@ article{
     .accommodations-card.card--horizontal{
         flex: 1 0 30%;
     }
+}
+
+@media screen and (min-width:1199px) {
+
 }
