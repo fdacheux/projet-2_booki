@@ -20,7 +20,14 @@
 
     <title>Booki : site de réservation d'hébergements</title>
 </head>
+
+
+
 <body>
+
+
+   <!---------- HEADER ----------> 
+
     <header>
         <nav class="navbar">
             <a href="index.html" class="navbar__logo"><img src="images/logo/Booki@3x.png" alt="logo_booki" /></a> <!--Lien index.html dans le cas d'une implémentation de pages sup-->
@@ -35,10 +42,17 @@
         </nav>
     </header>   
     
-<!--MAIN-->
+
+
+
+
+
+    <!---------- MAIN ---------->
+
     <main>
 
         <!--Search section-->
+
         <section class="search-container">
 
             <!--Promise-->
@@ -60,6 +74,7 @@
             </form>
            
             <!--filtres-->
+
             <div class="filters-block">
                 <h4>Filtres</h4>
 
@@ -274,7 +289,7 @@
 
                 <!-- accommodations card 6 : Hôtel chez Amina -->
                 
-                <article class="test">
+                <article>
                     <a href="#">
                         <div class="accommodations-card card--vertical">
 
@@ -302,7 +317,10 @@
                         </div>
                     </a>
                 </article>
+
+                <!-- Show more button-->
                 <a href="#" class="accommodations-block__more-button">Afficher plus</a>
+            
             </div>
 
             <!-- Popular block -->
@@ -317,79 +335,89 @@
                 <div class="popular-block__body">
                     
                     <!-- Popular card 1 : Hôtel Le soleil du matin -->
+                    
+                    <article class="accommodations-card card--horizontal">
+                        <a href="#">
 
-                    <div class="accommodations-card card--horizontal">
-
-                        <!-- photo -->
-                        <div class="accommodations-card__photo card--horizontal">
-                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                        </div>
-
-                        <!-- body -->
-                        <div class="accommodations-card__body card--horizontal">
-                            <h4>Hôtel Le soleil du matin</h4>
-                            <p>Nuit à partir de <b>128€</b></p>
-                            <div class="accommodations-card__ratings card--horizontal">
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
+                            <!-- photo -->
+                            <div class="accommodations-card__photo card--horizontal">
+                                <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                             </div>
-                        </div>
 
-                    </div>
+                            <!-- body -->
+                            <div class="accommodations-card__body card--horizontal">
+                                <h4>Hôtel Le soleil du matin</h4>
+                                <p>Nuit à partir de <b>128€</b></p>
+                                <div class="accommodations-card__ratings card--horizontal">
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                </div>
+                            </div>
+
+                        </a>
+                    </article>
 
                     <!-- Popular card 2 : Au coeur de l'eau Chambres d'hôtes -->
 
-                    <div class="accommodations-card card--horizontal">
+                    <article class="accommodations-card card--horizontal">
+                        <a href="#">
 
-                        <!-- photo -->
-                        <div class="accommodations-card__photo card--horizontal">
-                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-                        </div>
-
-                        <!-- body -->
-                        <div class="accommodations-card__body card--horizontal">
-                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                            <p>Nuit à partir de <b>71€</b></p>
-                            <div class="accommodations-card__ratings card--horizontal">
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__grey-star"></i>
+                            <!-- photo -->
+                            <div class="accommodations-card__photo card--horizontal">
+                                <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                             </div>
-                        </div>
 
-                    </div>
+                            <!-- body -->
+                            <div class="accommodations-card__body card--horizontal">
+                                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                <p>Nuit à partir de <b>71€</b></p>
+                                <div class="accommodations-card__ratings card--horizontal">
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__grey-star"></i>
+                                </div>
+                            </div>
+
+                        </a>
+                    </article>
 
                     <!-- Popular card 3 : Hôtel Tout bleu et blanc -->
 
-                    <div class="accommodations-card card--horizontal">
+                    <article class="accommodations-card card--horizontal">
+                        <a href="#">
 
                             <!-- photo -->
                             <div class="accommodations-card__photo card--horizontal">
                                 <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                             </div>
 
-                        <!-- body -->
-                        <div class="accommodations-card__body card--horizontal">
-                            <h4>Hôtel Tout bleu et blanc</h4>
-                            <p>Nuit à partir de <b>68€</b></p>
-                            <div class="accommodations-card__ratings card--horizontal">
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__blue-star"></i>
-                                <i class="fas fa-star card__grey-star"></i>
+                            <!-- body -->
+                            <div class="accommodations-card__body card--horizontal">
+                                <h4>Hôtel Tout bleu et blanc</h4>
+                                <p>Nuit à partir de <b>68€</b></p>
+                                <div class="accommodations-card__ratings card--horizontal">
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__blue-star"></i>
+                                    <i class="fas fa-star card__grey-star"></i>
+                                </div>
                             </div>
-                        </div>
+                    
+                            </a>
+                    </article> 
 
-                    </div> 
                 </div>
             </aside>
         </section>
+
+
+        <!--Activities section-->
 
         <section class="activities-section" id="activities-bookmark">
 
@@ -398,6 +426,7 @@
                 <div class="activities-block">
 
                     <!-- Card 1 : Vieux Port -->
+
                     <a href="#">
                         <article>
                             <div class="activities-card xl-card">
@@ -407,8 +436,12 @@
                         </article>
                     </a>
 
+                    <!-- Col 2-->
+
                     <div class="activities-block__2lines-column">
-                     <!-- Card 2 : Fort de Pomègues -->
+
+                        <!-- Card 2 : Fort de Pomègues -->
+
                         <a href="#">
                             <article>
                                 <div class="activities-card large-card">
@@ -421,7 +454,8 @@
                         </a> 
                       
 
-                     <!-- Card 3 : Îles du Frioul -->
+                        <!-- Card 3 : Îles du Frioul -->
+
                         <a href="#">
                             <article>
                                 <div class="activities-card xs-card">
@@ -434,6 +468,7 @@
 
 
                      <!-- Card 4 : Parc National des Calanques -->
+
                      <a href="#" class="second-div">
                         <article>
                             <div class="activities-card xl-card">
@@ -442,9 +477,13 @@
                             </div>
                         </article>
                     </a>
-                       
+                     
+                    <!--Col 4-->
+
                     <div class="activities-block__2lines-column">
+
                         <!-- Card 5 : Notre-Dame-de-la-Garde -->
+                        
                         <a href="#">
                             <article>
                                 <div class="activities-card small-card">
@@ -456,6 +495,7 @@
                     
 
                         <!-- Card 6 : Parc Longchamp -->
+
                         <a href="#">
                             <article>
                                 <div class="activities-card medium-card">
@@ -471,7 +511,10 @@
 
     </main>
 
-    <!--Footer-->
+
+
+    <!----------FOOTER---------->
+    
     <footer>
         <div class="footer-block">
 
