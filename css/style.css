@@ -194,7 +194,7 @@ label {
     transition: transform 200ms ease-in;
 }
 
-.filters-block__checkbox-block{
+.filters-block__checkbox-block *{
     cursor: pointer;
 }
 
@@ -234,27 +234,27 @@ input[type="checkbox"] {
 
 /* Animations */
 
-label:hover:not(checked) {
+.filters-block__checkbox-block:hover  {
     transform: scale(1.1);
 }
 
-label:hover:not(checked) .filters-block__label {
+.filters-block__checkbox-block:hover .filters-block__label {
     color:#fc6500; 
 }
 
-label:hover:not(checked) i {
+.filters-block__checkbox-block:hover i {
     background-color: #ffebde;
     color:#fc6500;  
 }
 
-input:checked+div {
+input:checked:not(:hover)+div {
     border-color: hsla(24, 100%, 80%, 0.178);
     background-color: #ffebde;
     color: #fc6500;
     box-shadow: -1px 0px 5px 2px hsla(24, 100%, 78%, 0.178) inset;
 }
 
-input:checked+div i {
+input:checked:not(:hover)+div i {
     background-color: #fc6500;
     color: #f2f2f2;
     box-shadow: 4px 0px 5px 1px hsl(24, 100%, 47%) inset;
