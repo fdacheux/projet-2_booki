@@ -235,7 +235,6 @@ label {
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 50px;
-    padding-right: 10px;
 }
 
 .filters-block__label i {
@@ -249,10 +248,17 @@ label {
     color: #0065FC;
 }
 
+.filters-block__label label{
+    display: inline-flex; 
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 50px;
+    padding: 0;
+}
 
 .filters-block span {
-  padding: 0 10px; 
-  font-weight: 700;
+    padding: 0 20px 0 10px;
+    font-weight: 700;
 } 
 
 input[type="checkbox"] {
@@ -268,23 +274,23 @@ input[type="checkbox"] {
     transform: scale(1.1);
 }
 
-.filters-block__checkbox-block:hover .filters-block__label {
+/* .filters-block__checkbox-block:hover .filters-block__label {
     color:#fc6500; 
-}
+} */
 
-.filters-block__checkbox-block:hover i {
+/* .filters-block__checkbox-block:hover i {
     background-color: #ffebde;
     color:#fc6500;  
-}
+} */
 
-input:checked:not(:hover)+div {
+input:checked:not(:hover)+label {
     border-color: hsla(24, 100%, 80%, 0.178);
     background-color: #ffebde;
     color: #fc6500;
     box-shadow: -1px 0px 5px 2px hsla(24, 100%, 78%, 0.178) inset;
 }
 
-input:checked:not(:hover)+div i {
+input:checked:not(:hover)+label i {
     background-color: #fc6500;
     color: #f2f2f2;
     box-shadow: 4px 0px 5px 1px hsl(24, 100%, 47%) inset;
