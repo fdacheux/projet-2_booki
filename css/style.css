@@ -265,49 +265,38 @@ input[type="checkbox"] {
   height: 0;
 }
 
-/* Animations */
+/* Filters : animations */
 
-.filters-block__checkbox-block:hover  {
+/* :hover */
+
+.filters-block__label:hover  {
     transform: scale(1.1);
 }
 
-.filters-block__checkbox-block:hover .filters-block__label {
+input:not(:checked)+label:hover>* {
     color:#fc6500; 
 }
 
-.filters-block__checkbox-block:hover i {
+input:not(:checked)+label:hover i {
     background-color: #ffebde;
-    color:#fc6500;  
 }
 
-input:checked:not(:hover)+div {
-    border-color: hsla(24, 100%, 80%, 0.178);
+/* :checked */
+
+input:checked+ label {
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 1px #ffebde;
     background-color: #ffebde;
     color: #fc6500;
-    box-shadow: -1px 0px 5px 2px hsla(24, 100%, 78%, 0.178) inset;
 }
 
-input:checked:not(:hover)+div i {
+input:checked+label i {
     background-color: #fc6500;
     color: #f2f2f2;
     box-shadow: 4px 0px 5px 1px hsl(24, 100%, 47%) inset;
 }
 
-/* Animations for keyboard accessibility */
 
-/* input[type="checkbox"]:focus-within+ div{
-    box-shadow: 1px 1px 9px 5px hsl(0, 0%, 90%); 
-    transform: scale(1.1);
-}  */
-
-.accommodations-card:hover{
-    transform: scale(1.1);
-}
-
-.activities-card:hover {
-    transform: scale(0.95);
-    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.336);
-}
 
 
 /*****Info block******/
@@ -394,13 +383,18 @@ input:checked:not(:hover)+div i {
     color:#F2F2F2;
 }
 
+/* Accommodations cards animations */
+
+.accommodations-card:hover{
+    transform: scale(1.1);
+}
 /*-> accommodations block <-*/
 
 .accommodations-block h2{
     width: 100%;
 }
 
-/* accommodations cards : vertical cards */
+/* Accommodations cards : vertical cards */
 
 .popular-block__header{
     display: flex;
@@ -506,6 +500,11 @@ input:checked:not(:hover)+div i {
     bottom: 0;
 }
 
+
+
+
+
+
 /***** activities section  *****/
 
 .activities-section{
@@ -556,7 +555,17 @@ input:checked:not(:hover)+div i {
 .activities-card h4{
     padding: 20px 15px;
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 } 
+
+/* Activities cards animations */
+
+.activities-card:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.336);
+}
 
 /*-> Specific card <-*/
 
