@@ -60,7 +60,7 @@ p {
     margin: 0;
 }
 
-/***** Focus *****/
+/***** Focus animations *****/
 
 :focus {
     outline: none;
@@ -77,12 +77,15 @@ p {
 
 
 
+/* ----- Navigation bar block ----- */
 
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* Logo */
 
 .navbar__logo {
     display: flex;
@@ -92,6 +95,8 @@ p {
 nav img {
     height: 56px;
 }
+
+/* Btn group */
 
 .navbar__button-group {
     display: flex;
@@ -305,19 +310,10 @@ input:checked+label i {
     border-radius: 25px;
 }
 
-.accommodations-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 34px;
-    width: calc(2*100%/3);  
-}
-
 
 /***** All accommodations cards *****/
 
-.accommodations-block article {
-    flex: 1 0 30%;
-}
+
 
 .accommodations-card {
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.082);
@@ -327,6 +323,8 @@ input:checked+label i {
     transition: transform 300ms ease-out;
   }
 
+/* -> Img */
+
 .accommodations-card__photo {
     overflow: hidden;
 }
@@ -334,6 +332,8 @@ input:checked+label i {
 .accommodations-card__photo img {
     object-fit: cover;
 }
+
+/* -> Body */
 
 .accommodations-card__body {
     font-size: 14px;
@@ -363,8 +363,19 @@ input:checked+label i {
 
 /***** Accommodations block *****/
 
+.accommodations-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    width: calc(2*100%/3);  
+}
+
 .accommodations-block h2 {
     width: 100%;
+}
+
+.accommodations-block article {
+    flex: 1 0 30%;
 }
 
 /***** Accommodations cards : vertical cards *****/
@@ -375,7 +386,7 @@ input:checked+label i {
     min-width: 220px;
 }
 
-/*Vertical cards : photo */
+/* -> Vertical cards : photo */
 
 .accommodations-card__photo.card--vertical {
     border-radius: 15px 15px 0 0;
@@ -388,7 +399,7 @@ input:checked+label i {
     height: 130px;
 }
 
-/* vertical cards : body */
+/* -> Vertical cards : body */
 
 .accommodations-card__body.card--vertical {
     padding: 0px 0 5px 10px;
@@ -451,10 +462,8 @@ input:checked+label i {
     max-width: 100%;
 }
 
-.card--horizontal img {
-    width: 100%;
-    height: 100%;
-}
+
+/* -> Horizontal cards : img */
 
 .accommodations-card__photo.card--horizontal {
     border-radius: 15px 0 0 15px;
@@ -463,6 +472,13 @@ input:checked+label i {
     max-width: 38%;
     
 }
+
+.card--horizontal img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -> Horizontal cards : body */
 
 .accommodations-card__body.card--horizontal {
     position: relative;
@@ -563,7 +579,6 @@ input:checked+label i {
 
 
 
-
 /*__________________________________*/
 /*------------> FOOTER <------------*/
 /*__________________________________*/
@@ -624,10 +639,6 @@ footer {
         width:100%;
     }
 
-    main {
-        width: 100%;
-    }
-
     /* ----- Mobile : Navbar ----- */
 
     .navbar {
@@ -666,6 +677,9 @@ footer {
     /* -- MAIN -- */
     /* __________ */
     
+    main {
+        width: 100%;
+    }
 
     /* ----- Mobile : Search section ----- */
 
@@ -687,20 +701,18 @@ footer {
         gap: 12px;
     }
 
-    h4 {
-        width: 100%; /*forcing h4 to be above filters */
+    .filters-block h4 {
+        width: 100%; 
     } 
 
 
     /* ----- Mobile: accommodations section ----- */
  
-    .accommodations-block {
-        padding-bottom: 10px;
-    }
-
+    /* -> Accommodations block */
     .accommodations-block {
         flex-direction: column;
-        background-color: transparent;
+        background-color: transparent;        
+        padding-bottom: 10px;
     }
 
     .accommodations-card.card--vertical {
@@ -711,6 +723,7 @@ footer {
         min-height:90%;
     }
 
+    /* -> Popular block */
     .popular-block {
         border-radius: 0;
     }
@@ -796,7 +809,7 @@ footer {
     /* __________ */
 
    
-    /* ----- Tablets (medium screens) : activities block ----- */
+    /* ----- Tablets (medium screens) : activities section ----- */
 
     .activities-block {
         flex-direction: row-reverse;
@@ -843,6 +856,8 @@ footer {
 
 @media screen and (max-width:1199px) {
 
+    /* ----- Accommodations section ----- */
+    
     .accommodations-section {
         flex-direction: column-reverse;
     }
