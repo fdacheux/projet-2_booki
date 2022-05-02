@@ -33,42 +33,57 @@
 
 <body>
 
-
-   <!--******** HEADER ******** --> 
+   
+   <!-- ******** HEADER ******** --> 
 
     <header>
+
+        <!-- Navigation bar -->
+
         <nav class="navbar">
+
+            <!-- Logo -->
             <a href="index.html" class="navbar__logo"><img src="images/logo/Booki@3x.png" alt="logo_booki" /></a> 
+            
+            <!-- Buttons group -->
             <ul class="navbar__button-group">
+
+                <!-- Accomodations button -->
                 <li class="navbar__button">
                     <a href="#accommodations-bookmark"><span>Hébergements</span></a>
                 </li>
+
+                <!-- Activities button -->
                 <li class="navbar__button">
                     <a href="#activities-bookmark"><span>Activités</span></a>
                 </li>
+
             </ul>
+
         </nav>
+
     </header>   
     
-
+  
 
 
     <!-- ******** MAIN ******** -->
 
     <main>
 
-        <!--Search section-->
+
+        <!-- *** Search section *** -->
 
         <section class="search-container">
 
-            <!--Promise-->
+            <!-- I) Promise block -->
 
             <div class="promise-block">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
 
-            <!--Search-bar-->
+            <!-- II) Search-bar form -->
 
             <form class="search-bar">
                 <div class=" search-bar__location-logo"><i class="fa-solid fa-location-dot"></i></div>
@@ -79,7 +94,7 @@
                 </button>
             </form>
            
-            <!--filtres-->
+            <!-- III) Filters block-->
 
             <div class="filters-block">
                 <h4>Filtres</h4>
@@ -129,10 +144,13 @@
 
             </div>
 
+            <!-- IV) Info block -->
+
             <div class="info-block">
                 <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+
         </section>
 
 
@@ -140,11 +158,12 @@
         
         <section class="accommodations-section" id="accommodations-bookmark">
 
-            <!-- accommodations-block -->
+            <!-- I) Accommodations-block -->
 
             <div class="accommodations-block">
 
                 <h2>Hébergements à Marseille</h2>
+                
                 <!-- accommodations card 1 : Auberge La Cannebière -->
                 
                 <article>
@@ -162,6 +181,8 @@
                                 <p>
                                     Nuit à partir de <b>25€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -192,6 +213,8 @@
                                 <p>
                                     Nuit à partir de <b>52€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -222,6 +245,8 @@
                                 <p>
                                     Nuit à partir de <b>76€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -253,6 +278,8 @@
                                 <p>
                                     Nuit à partir de <b>46€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -283,6 +310,8 @@
                                 <p>
                                     Nuit à partir de <b>23€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -313,6 +342,8 @@
                                 <p>
                                     Nuit à partir de <b>96€</b>
                                 </p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--vertical">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -332,15 +363,18 @@
             
             </div>
 
-            <!-- Popular block -->
+            <!-- II) Popular block -->
 
             <aside class="popular-block">
 
+
+                <!-- Popular block : header block-->
                 <div class="popular-block__header">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
                 
+                <!-- Popular block : body-->
                 <div class="popular-block__body">
                     
                     <!-- Popular card 1 : Hôtel Le soleil du matin -->
@@ -357,13 +391,15 @@
                             <div class="accommodations-card__body card--horizontal">
                                 <h4>Hôtel Le soleil du matin</h4>
                                 <p>Nuit à partir de <b>128€</b></p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--horizontal">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
-                                </div>
+                                </div>                                
                             </div>
 
                         </a>
@@ -383,6 +419,8 @@
                             <div class="accommodations-card__body card--horizontal">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                 <p>Nuit à partir de <b>71€</b></p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--horizontal">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -390,6 +428,7 @@
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__grey-star"></i>
                                 </div>
+
                             </div>
 
                         </a>
@@ -409,6 +448,8 @@
                             <div class="accommodations-card__body card--horizontal">
                                 <h4>Hôtel Tout bleu et blanc</h4>
                                 <p>Nuit à partir de <b>68€</b></p>
+
+                                <!-- ratings (stars)-->
                                 <div class="accommodations-card__ratings card--horizontal">
                                     <i class="fas fa-star card__blue-star"></i>
                                     <i class="fas fa-star card__blue-star"></i>
@@ -422,7 +463,10 @@
                     </article> 
 
                 </div>
+
+
             </aside>
+
         </section>
 
 
@@ -432,88 +476,90 @@
 
             <h2>Activités à Marseille</h2>
 
-                <div class="activities-block">
+            <!-- Activities block -->
+            <div class="activities-block">
 
-                    <!-- Card 1 : Vieux Port -->
+                <!-- Card 1 : Vieux Port -->
+
+                <a href="#">
+                    <article>
+                        <div class="activities-card xl-card">
+                            <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="xl-card__photo">
+                            <h4>Vieux Port</h4>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Col 2 : cards 2 & 3-->
+
+                <div class="activities-block__2lines-column">
+
+                    <!-- I) Card 2 : Fort de Pomègues -->
 
                     <a href="#">
                         <article>
-                            <div class="activities-card xl-card">
-                                <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="xl-card__photo">
-                                <h4>Vieux Port</h4>
+                            <div class="activities-card large-card">
+                                <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="large-card__photo">
+                                <h4>Fort de Pomègues</h4>
                             </div>
                         </article>
-                    </a>
-
-                    <!-- Col 2-->
-
-                    <div class="activities-block__2lines-column">
-
-                        <!-- Card 2 : Fort de Pomègues -->
-
-                        <a href="#">
-                            <article>
-                                <div class="activities-card large-card">
-                                    <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="large-card__photo">
-                                     <h4>Fort de Pomègues</h4>
-                                </div>
-                            </article>
-                        </a> 
+                    </a> 
                       
+                    <!-- II) Card 3 : Îles du Frioul -->
 
-                        <!-- Card 3 : Îles du Frioul -->
-
-                        <a href="#">
-                            <article>
-                                <div class="activities-card xs-card">
-                                    <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="xs-card__photo">
-                                    <h4>Îles du Frioul</h4>
-                                </div>
-                            </article>
-                        </a> 
-                    </div>   
-
-
-                     <!-- Card 4 : Parc National des Calanques -->
-
-                     <a href="#" class="second-div">
+                    <a href="#">
                         <article>
-                            <div class="activities-card xl-card">
-                                <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="xl-card__photo">
-                                <h4>Parc National des Calanques</h4>
+                            <div class="activities-card xs-card">
+                                <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="xs-card__photo">
+                                <h4>Îles du Frioul</h4>
                             </div>
                         </article>
                     </a>
+
+                </div>   
+
+
+                <!-- Card 4 : Parc National des Calanques -->
+
+                <a href="#" class="second-div">
+                    <article>
+                        <div class="activities-card xl-card">
+                            <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="xl-card__photo">
+                            <h4>Parc National des Calanques</h4>
+                        </div>
+                    </article>
+                </a>
                      
-                    <!--Col 4-->
+                <!--Col 4 : cards 5 & 6-->
 
-                    <div class="activities-block__2lines-column">
+                <div class="activities-block__2lines-column">
 
-                        <!-- Card 5 : Notre-Dame-de-la-Garde -->
+                    <!-- I) Card 5 : Notre-Dame-de-la-Garde -->
                         
-                        <a href="#">
-                            <article>
-                                <div class="activities-card small-card">
-                                    <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="small-card__photo">
-                                    <h4>Notre-Dame-de-la-Garde</h4>
-                                </div>
-                            </article>
-                        </a>   
+                    <a href="#">
+                        <article>
+                            <div class="activities-card small-card">
+                                <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="small-card__photo">
+                                <h4>Notre-Dame-de-la-Garde</h4>
+                            </div>
+                        </article>
+                    </a>   
                     
+                    <!-- II) Card 6 : Parc Longchamp -->
 
-                        <!-- Card 6 : Parc Longchamp -->
+                    <a href="#">
+                        <article>
+                            <div class="activities-card medium-card">
+                                <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="medium-card__photo">
+                                <h4>Parc Longchamp</h4>
+                            </div>
+                        </article>
+                    </a>
 
-                        <a href="#">
-                            <article>
-                                <div class="activities-card medium-card">
-                                    <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="medium-card__photo">
-                                    <h4>Parc Longchamp</h4>
-                                </div>
-                            </article>
-                        </a>
-                    </div>   
+                </div>   
 
-                </div>
+            </div>
+
         </section>
 
     </main>
@@ -523,9 +569,11 @@
     <!-- ******** FOOTER ******** -->
     
     <footer>
+
+        <!-- Footer block -->
         <div class="footer-block">
 
-            <!--col 1-->
+            <!--col 1 : A propos-->
             <div class="footer-column">
                 <h4>À propos</h4>
                 <ul>
@@ -535,7 +583,7 @@
                 </ul>
             </div>
 
-            <!--col 2-->
+            <!--col 2 : Nos hébergements-->
             <div class="footer-column">
                 <h4>Nos hébergements</h4>
                 <ul>
@@ -544,7 +592,7 @@
                 </ul>
             </div>
 
-            <!--col 3-->
+            <!--col 3 : Assitance-->
             <div class="footer-column">
                 <h4>Assistance</h4>
                 <ul>
@@ -552,7 +600,9 @@
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
+
         </div>
+        
     </footer>
     
 </body>
